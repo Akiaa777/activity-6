@@ -1,0 +1,27 @@
+#single array
+arr1 = ["i", "don't", "give", "a", "damn", "'bout", "you"]
+
+#nested array
+arr2 = [
+    ["11", "12", "13", "14", "15"],
+    ["16", "17", "18", "19", "20"],
+    ["21", "22", "23", "24", "25"], 
+    ]
+ask = input("single or two dimensional array?: ")
+
+def loop_through_array(arr1):
+    for n in arr1:
+        print(n)
+    
+if ask == "single dimensional array":
+    loop_through_array(arr1)
+    
+elif ask == "two dimensional array":
+    for sub_n in arr2:
+        loop_through_array(sub_n)
+        
+else: 
+    print(error)
+        
+    
+    
